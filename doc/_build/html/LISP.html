@@ -166,7 +166,7 @@
            <div itemprop="articleBody">
             
   <div class="section" id="chrysalisp">
-<span id="chrysalisp"></span><h1>ChrysaLisp<a class="headerlink" href="#chrysalisp" title="Permalink to this headline">¶</a></h1>
+<h1>ChrysaLisp<a class="headerlink" href="#chrysalisp" title="Permalink to this headline">¶</a></h1>
 <p>It’s probably worth a few words specifically about the included Lisp and how it
 works, and how many rules it breaks ! The reason for doing the Lisp was to
 allow me to create an assembler to replace NASM, I was not concerned with
@@ -213,250 +213,250 @@ evaluate to <code class="docutils literal notranslate"><span class="pre">nil</sp
 the declaring function. There is no global macro list. During macro expansion
 the environment chain is searched to see if a macro exists.</p>
 <div class="section" id="within-any-lisp-instance">
-<span id="within-any-lisp-instance"></span><h2>Within any Lisp instance<a class="headerlink" href="#within-any-lisp-instance" title="Permalink to this headline">¶</a></h2>
+<h2>Within any Lisp instance<a class="headerlink" href="#within-any-lisp-instance" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="built-in-symbols">
-<span id="built-in-symbols"></span><h3>Built in symbols<a class="headerlink" href="#built-in-symbols" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-ChrysaLisp notranslate"><div class="highlight"><pre><span></span>&amp;rest
-&amp;optional
-nil
-t
+<h3>Built in symbols<a class="headerlink" href="#built-in-symbols" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-lisp notranslate"><div class="highlight"><pre><span></span><span class="k">&amp;rest</span>
+<span class="k">&amp;optional</span>
+<span class="no">nil</span>
+<span class="no">t</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="built-in-functions">
-<span id="built-in-functions"></span><h3>Built in functions<a class="headerlink" href="#built-in-functions" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-ChrysaLisp notranslate"><div class="highlight"><pre><span></span>add
-age
-apply
-array
-bind
-bit-and
-bit-asr
-bit-or
-bit-shl
-bit-shr
-bit-xor
-catch
-call
-cat
-char
-clear
-cmp
-code
-cond
-copy
-def
-def?
-defmacro
-defq
-div
-each!
-elem
-elem-set
-env
-eq
-eql
-eval
-fcos
-fdiv
-file-stream
-find
-floor
-fmod
-fmul
-frac
-fsin
-fsqrt
-ffi
-ge
-gensym
-gt
-inst-of
-lambda
-le
-length
-list
-load
-lt
-macro
-macroexpand
-macroexpand-1
-match?
-mod
-mul
-ne
-not
-pipe
-pipe-read
-pipe-write
-points
-pop
-prin
-print
-progn
-push
-quasi-quote
-quote
-read
-read-char
-read-line
-repl
-save
-set
-setq
-slice
-some!
-split
-str
-string-stream
-sub
-sym
-throw
-time
-unquote
-unquote-splicing
-while
-write
-write-char
-write-line
+<h3>Built in functions<a class="headerlink" href="#built-in-functions" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-lisp notranslate"><div class="highlight"><pre><span></span><span class="nv">add</span>
+<span class="nv">age</span>
+<span class="nb">apply</span>
+<span class="nc">array</span>
+<span class="nv">bind</span>
+<span class="nb">bit-and</span>
+<span class="nv">bit-asr</span>
+<span class="nv">bit-or</span>
+<span class="nv">bit-shl</span>
+<span class="nv">bit-shr</span>
+<span class="nb">bit-xor</span>
+<span class="k">catch</span>
+<span class="nv">call</span>
+<span class="nv">cat</span>
+<span class="nb">char</span>
+<span class="nv">clear</span>
+<span class="nv">cmp</span>
+<span class="nv">code</span>
+<span class="nb">cond</span>
+<span class="nv">copy</span>
+<span class="nv">def</span>
+<span class="nv">def?</span>
+<span class="nb">defmacro</span>
+<span class="nv">defq</span>
+<span class="nv">div</span>
+<span class="nv">each!</span>
+<span class="nv">elem</span>
+<span class="nv">elem-set</span>
+<span class="nv">env</span>
+<span class="nb">eq</span>
+<span class="nb">eql</span>
+<span class="nb">eval</span>
+<span class="nv">fcos</span>
+<span class="nv">fdiv</span>
+<span class="nc">file-stream</span>
+<span class="nb">find</span>
+<span class="nb">floor</span>
+<span class="nv">fmod</span>
+<span class="nv">fmul</span>
+<span class="nv">frac</span>
+<span class="nv">fsin</span>
+<span class="nv">fsqrt</span>
+<span class="nv">ffi</span>
+<span class="nv">ge</span>
+<span class="nb">gensym</span>
+<span class="nv">gt</span>
+<span class="nv">inst-of</span>
+<span class="k">lambda</span>
+<span class="nv">le</span>
+<span class="nb">length</span>
+<span class="nb">list</span>
+<span class="nb">load</span>
+<span class="nv">lt</span>
+<span class="nv">macro</span>
+<span class="nb">macroexpand</span>
+<span class="nb">macroexpand-1</span>
+<span class="nv">match?</span>
+<span class="nb">mod</span>
+<span class="nv">mul</span>
+<span class="nv">ne</span>
+<span class="nb">not</span>
+<span class="nv">pipe</span>
+<span class="nv">pipe-read</span>
+<span class="nv">pipe-write</span>
+<span class="nv">points</span>
+<span class="nb">pop</span>
+<span class="nv">prin</span>
+<span class="nb">print</span>
+<span class="k">progn</span>
+<span class="nb">push</span>
+<span class="nv">quasi-quote</span>
+<span class="k">quote</span>
+<span class="nb">read</span>
+<span class="nb">read-char</span>
+<span class="nb">read-line</span>
+<span class="nv">repl</span>
+<span class="nv">save</span>
+<span class="nb">set</span>
+<span class="k">setq</span>
+<span class="nv">slice</span>
+<span class="nv">some!</span>
+<span class="nv">split</span>
+<span class="nv">str</span>
+<span class="nc">string-stream</span>
+<span class="nv">sub</span>
+<span class="nv">sym</span>
+<span class="k">throw</span>
+<span class="nb">time</span>
+<span class="nv">unquote</span>
+<span class="nv">unquote-splicing</span>
+<span class="nv">while</span>
+<span class="nb">write</span>
+<span class="nb">write-char</span>
+<span class="nb">write-line</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="boot-lisp-symbols">
-<span id="boot-lisp-symbols"></span><h3>boot.lisp symbols<a class="headerlink" href="#boot-lisp-symbols" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-ChrysaLisp notranslate"><div class="highlight"><pre><span></span>min_long
-max_long
-min_int
-max_int
-fp_shift
-fp_2pi
-fp_pi
-fp_hpi
-fp_qpi
-fp_rpi
-fp_int_mask
-fp_frac_mask
+<h3>boot.lisp symbols<a class="headerlink" href="#boot-lisp-symbols" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-lisp notranslate"><div class="highlight"><pre><span></span><span class="nv">min_long</span>
+<span class="nv">max_long</span>
+<span class="nv">min_int</span>
+<span class="nv">max_int</span>
+<span class="nv">fp_shift</span>
+<span class="nv">fp_2pi</span>
+<span class="nv">fp_pi</span>
+<span class="nv">fp_hpi</span>
+<span class="nv">fp_qpi</span>
+<span class="nv">fp_rpi</span>
+<span class="nv">fp_int_mask</span>
+<span class="nv">fp_frac_mask</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="boot-lisp-macros">
-<span id="boot-lisp-macros"></span><h3>boot.lisp macros<a class="headerlink" href="#boot-lisp-macros" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-ChrysaLisp notranslate"><div class="highlight"><pre><span></span>and
-ascii
-compose
-curry
-dec
-if
-inc
-let
-minus
-opt
-or
-rcurry
-run
-setd
-sym-cat
-times
-unless
-until
-when
+<h3>boot.lisp macros<a class="headerlink" href="#boot-lisp-macros" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-lisp notranslate"><div class="highlight"><pre><span></span><span class="nb">and</span>
+<span class="nv">ascii</span>
+<span class="nv">compose</span>
+<span class="nv">curry</span>
+<span class="nv">dec</span>
+<span class="k">if</span>
+<span class="nv">inc</span>
+<span class="k">let</span>
+<span class="nv">minus</span>
+<span class="nv">opt</span>
+<span class="nb">or</span>
+<span class="nv">rcurry</span>
+<span class="nv">run</span>
+<span class="nv">setd</span>
+<span class="nv">sym-cat</span>
+<span class="nv">times</span>
+<span class="nb">unless</span>
+<span class="nv">until</span>
+<span class="nb">when</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="boot-lisp-functions">
-<span id="boot-lisp-functions"></span><h3>boot.lisp functions<a class="headerlink" href="#boot-lisp-functions" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-ChrysaLisp notranslate"><div class="highlight"><pre><span></span>abs
-align
-bit-not
-count-leading-ones
-count-trailing-ones
-count-trailing-zeros
-cpu
-cubed
-defun
-divmod
-each
-each-line
-each-mergeable
-each-mergeable-rev
-each-rev
-equalp
-every
-each-pipe-line
-filter
-from-base-char
-insert
-insert-sym
-log2
-lst?
-map
-map-rev
-max
-merge
-merge-sym
-min
-neg
-notany
-notevery
-num?
-obj?
-partition
-platform
-prin-base
-range
-reduce
-reduce-rev
-read-byte
-read-short
-read-int
-read-long
-read-cstr
-shuffle
-shuffled
-sign
-some
-sort
-sorted
-squared
-str?
-swap
-sym?
-to-base-char
-to-num
-trim
-trim-end
-trim-start
-within-compile-env
+<h3>boot.lisp functions<a class="headerlink" href="#boot-lisp-functions" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-lisp notranslate"><div class="highlight"><pre><span></span><span class="nb">abs</span>
+<span class="nv">align</span>
+<span class="nb">bit-not</span>
+<span class="nv">count-leading-ones</span>
+<span class="nv">count-trailing-ones</span>
+<span class="nv">count-trailing-zeros</span>
+<span class="nv">cpu</span>
+<span class="nv">cubed</span>
+<span class="nb">defun</span>
+<span class="nv">divmod</span>
+<span class="nv">each</span>
+<span class="nv">each-line</span>
+<span class="nv">each-mergeable</span>
+<span class="nv">each-mergeable-rev</span>
+<span class="nv">each-rev</span>
+<span class="nb">equalp</span>
+<span class="nb">every</span>
+<span class="nv">each-pipe-line</span>
+<span class="nv">filter</span>
+<span class="nv">from-base-char</span>
+<span class="nv">insert</span>
+<span class="nv">insert-sym</span>
+<span class="nv">log2</span>
+<span class="nv">lst?</span>
+<span class="nb">map</span>
+<span class="nv">map-rev</span>
+<span class="nb">max</span>
+<span class="nb">merge</span>
+<span class="nv">merge-sym</span>
+<span class="nb">min</span>
+<span class="nv">neg</span>
+<span class="nb">notany</span>
+<span class="nb">notevery</span>
+<span class="nv">num?</span>
+<span class="nv">obj?</span>
+<span class="nv">partition</span>
+<span class="nv">platform</span>
+<span class="nv">prin-base</span>
+<span class="nv">range</span>
+<span class="nb">reduce</span>
+<span class="nv">reduce-rev</span>
+<span class="nb">read-byte</span>
+<span class="nv">read-short</span>
+<span class="nv">read-int</span>
+<span class="nv">read-long</span>
+<span class="nv">read-cstr</span>
+<span class="nv">shuffle</span>
+<span class="nv">shuffled</span>
+<span class="nv">sign</span>
+<span class="nb">some</span>
+<span class="nb">sort</span>
+<span class="nv">sorted</span>
+<span class="nv">squared</span>
+<span class="nv">str?</span>
+<span class="nv">swap</span>
+<span class="nv">sym?</span>
+<span class="nv">to-base-char</span>
+<span class="nv">to-num</span>
+<span class="nv">trim</span>
+<span class="nv">trim-end</span>
+<span class="nv">trim-start</span>
+<span class="nv">within-compile-env</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="section" id="within-any-cmd-lisp-lisp-instance">
-<span id="within-any-cmd-lisp-lisp-instance"></span><h2>Within any cmd/lisp.lisp instance<a class="headerlink" href="#within-any-cmd-lisp-lisp-instance" title="Permalink to this headline">¶</a></h2>
+<h2>Within any cmd/lisp.lisp instance<a class="headerlink" href="#within-any-cmd-lisp-lisp-instance" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="asm-inc-symbols">
-<span id="asm-inc-symbols"></span><h3>asm.inc symbols<a class="headerlink" href="#asm-inc-symbols" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-ChrysaLisp notranslate"><div class="highlight"><pre><span></span>debug_mode
-debug_emit
-debug_inst
+<h3>asm.inc symbols<a class="headerlink" href="#asm-inc-symbols" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-lisp notranslate"><div class="highlight"><pre><span></span><span class="nv">debug_mode</span>
+<span class="nv">debug_emit</span>
+<span class="nv">debug_inst</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="asm-inc-functions">
-<span id="asm-inc-functions"></span><h3>asm.inc functions<a class="headerlink" href="#asm-inc-functions" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-ChrysaLisp notranslate"><div class="highlight"><pre><span></span>all-vp-files
-compile
-compile-pipe
-compile-test
-make
-make-all
-make-all-platforms
-make-boot
-make-boot-all
-make-info
-make-platforms
-make-test
-remake
-remake-platforms
+<h3>asm.inc functions<a class="headerlink" href="#asm-inc-functions" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-lisp notranslate"><div class="highlight"><pre><span></span><span class="nv">all-vp-files</span>
+<span class="nb">compile</span>
+<span class="nv">compile-pipe</span>
+<span class="nv">compile-test</span>
+<span class="nv">make</span>
+<span class="nv">make-all</span>
+<span class="nv">make-all-platforms</span>
+<span class="nv">make-boot</span>
+<span class="nv">make-boot-all</span>
+<span class="nv">make-info</span>
+<span class="nv">make-platforms</span>
+<span class="nv">make-test</span>
+<span class="nv">remake</span>
+<span class="nv">remake-platforms</span>
 </pre></div>
 </div>
 </div>

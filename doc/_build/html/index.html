@@ -35,7 +35,8 @@
         <link rel="index" title="Index"
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="ChrysaLisp  documentation" href="#"/> 
+    <link rel="top" title="ChrysaLisp  documentation" href="#"/>
+        <link rel="next" title="ChrysaLisp" href="LISP.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -84,12 +85,88 @@
               
             
             
-              <!-- Local TOC -->
-              <div class="local-toc"><ul>
-<li><a class="reference internal" href="#">Welcome to ChrysaLisp’s documentation!</a></li>
-<li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="LISP.html">ChrysaLisp</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="LISP.html#within-any-lisp-instance">Within any Lisp instance</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="LISP.html#built-in-symbols">Built in symbols</a></li>
+<li class="toctree-l3"><a class="reference internal" href="LISP.html#built-in-functions">Built in functions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="LISP.html#boot-lisp-symbols">boot.lisp symbols</a></li>
+<li class="toctree-l3"><a class="reference internal" href="LISP.html#boot-lisp-macros">boot.lisp macros</a></li>
+<li class="toctree-l3"><a class="reference internal" href="LISP.html#boot-lisp-functions">boot.lisp functions</a></li>
 </ul>
-</div>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="LISP.html#within-any-cmd-lisp-lisp-instance">Within any cmd/lisp.lisp instance</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="LISP.html#asm-inc-symbols">asm.inc symbols</a></li>
+<li class="toctree-l3"><a class="reference internal" href="LISP.html#asm-inc-functions">asm.inc functions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="FUNCTIONS.html">Functions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="FUNCTIONS.html#function-format">Function format</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="FUNCTIONS.html#header-fields">Header fields</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="FUNCTIONS.html#low-level-vtable-string-and-calling-jumping">Low level Vtable, string, and calling/jumping</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="FUNCTIONS.html#fn-add-string">fn-add-string</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FUNCTIONS.html#fn-add-path">fn-add-path</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FUNCTIONS.html#fn-add-link">fn-add-link</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FUNCTIONS.html#fn-find-link">fn-find-link</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FUNCTIONS.html#fn-string">fn-string</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FUNCTIONS.html#fn-bind">fn-bind</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FUNCTIONS.html#fn-call">fn-call</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FUNCTIONS.html#fn-jmp">fn-jmp</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="FUNCTIONS.html#higher-level-function-calling">Higher level function calling</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="FUNCTIONS.html#f-call">f-call</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FUNCTIONS.html#f-jmp">f-jmp</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FUNCTIONS.html#f-bind">f-bind</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FUNCTIONS.html#s-call">s-call</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FUNCTIONS.html#s-jmp">s-jmp</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FUNCTIONS.html#s-bind">s-bind</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FUNCTIONS.html#v-call">v-call</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FUNCTIONS.html#v-jmp">v-jmp</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FUNCTIONS.html#v-bind">v-bind</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FUNCTIONS.html#d-call">d-call</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FUNCTIONS.html#d-jmp">d-jmp</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FUNCTIONS.html#d-bind">d-bind</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FUNCTIONS.html#r-call">r-call</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FUNCTIONS.html#l-call">l-call</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="FUNCTIONS.html#function-info-helpers">Function info helpers</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="FUNCTIONS.html#f-path">f-path</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FUNCTIONS.html#s-path">s-path</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="FUNCTIONS.html#function-entry-and-exit-helpers">Function entry and exit helpers</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="FUNCTIONS.html#f-entry">f-entry</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FUNCTIONS.html#f-exit">f-exit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FUNCTIONS.html#l-entry">l-entry</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FUNCTIONS.html#l-exit">l-exit</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="TAOS.html">Taos</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="TAOS.html#audience">Audience</a></li>
+<li class="toctree-l2"><a class="reference internal" href="TAOS.html#overview">Overview</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="TAOS.html#an-introduction-to-taos">An Introduction To Taos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="TAOS.html#key-features">Key Features</a></li>
+<li class="toctree-l3"><a class="reference internal" href="TAOS.html#the-challenge-of-parallel-systems">The Challenge of Parallel Systems</a></li>
+<li class="toctree-l3"><a class="reference internal" href="TAOS.html#features-benefits">Features &amp; Benefits</a></li>
+<li class="toctree-l3"><a class="reference internal" href="TAOS.html#portable">Portable</a></li>
+<li class="toctree-l3"><a class="reference internal" href="TAOS.html#virtual-processor">Virtual Processor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="TAOS.html#dynamic-binding">Dynamic Binding</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="TODO.html">Todo</a></li>
+</ul>
+
             
           
         </div>
@@ -151,22 +228,37 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <p>.. ChrysaLisp documentation master file, created by
-sphinx-quickstart on Mon Apr  2 12:25:52 2018.
-You can adapt this file completely to your liking, but it should at least
-contain the root <code class="docutils literal notranslate"><span class="pre">toctree</span></code> directive.</p>
-<div class="section" id="welcome-to-chrysalisp-s-documentation">
-<span id="welcome-to-chrysalisp-s-documentation"></span><h1>Welcome to ChrysaLisp’s documentation!<a class="headerlink" href="#welcome-to-chrysalisp-s-documentation" title="Permalink to this headline">¶</a></h1>
-<p>.. toctree::
-:maxdepth: 2
-:caption: Contents:</p>
+  <div class="section" id="welcome-to-chrysalisp-s-documentation">
+<h1>Welcome to ChrysaLisp’s documentation!<a class="headerlink" href="#welcome-to-chrysalisp-s-documentation" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="LISP.html">ChrysaLisp</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="LISP.html#within-any-lisp-instance">Within any Lisp instance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="LISP.html#within-any-cmd-lisp-lisp-instance">Within any cmd/lisp.lisp instance</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="FUNCTIONS.html">Functions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="FUNCTIONS.html#function-format">Function format</a></li>
+<li class="toctree-l2"><a class="reference internal" href="FUNCTIONS.html#low-level-vtable-string-and-calling-jumping">Low level Vtable, string, and calling/jumping</a></li>
+<li class="toctree-l2"><a class="reference internal" href="FUNCTIONS.html#higher-level-function-calling">Higher level function calling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="FUNCTIONS.html#function-info-helpers">Function info helpers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="FUNCTIONS.html#function-entry-and-exit-helpers">Function entry and exit helpers</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="TAOS.html">Taos</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="TAOS.html#audience">Audience</a></li>
+<li class="toctree-l2"><a class="reference internal" href="TAOS.html#overview">Overview</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="TODO.html">Todo</a></li>
+</ul>
+</div>
 </div>
 <div class="section" id="indices-and-tables">
-<span id="indices-and-tables"></span><h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
 <ul class="simple">
-<li>:ref:<code class="docutils literal notranslate"><span class="pre">genindex</span></code></li>
-<li>:ref:<code class="docutils literal notranslate"><span class="pre">modindex</span></code></li>
-<li>:ref:<code class="docutils literal notranslate"><span class="pre">search</span></code></li>
+<li><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></li>
 </ul>
 </div>
 
@@ -177,6 +269,13 @@ contain the root <code class="docutils literal notranslate"><span class="pre">to
            </div>
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="LISP.html" class="btn btn-neutral float-right" title="ChrysaLisp" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+    </div>
   
 
   <hr/>

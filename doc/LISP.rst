@@ -56,7 +56,7 @@ the environment chain is searched to see if a macro exists.
 
 ### Built in symbols
 
-```lisp
+```ChrysaLisp
 &rest
 &optional
 nil
@@ -65,7 +65,7 @@ t
 
 ### Built in functions
 
-```lisp
+```ChrysaLisp
 add
 age
 apply
@@ -164,7 +164,7 @@ write-line
 
 ### boot.lisp symbols
 
-```lisp
+```ChrysaLisp
 min_long
 max_long
 min_int
@@ -181,7 +181,7 @@ fp_frac_mask
 
 ### boot.lisp macros
 
-```lisp
+```ChrysaLisp
 and
 ascii
 compose
@@ -205,7 +205,7 @@ when
 
 ### boot.lisp functions
 
-```lisp
+```ChrysaLisp
 abs
 align
 bit-not
@@ -274,7 +274,7 @@ within-compile-env
 
 ### asm.inc symbols
 
-```lisp
+```ChrysaLisp
 debug_mode
 debug_emit
 debug_inst
@@ -282,7 +282,7 @@ debug_inst
 
 ### asm.inc functions
 
-```lisp
+```ChrysaLisp
 all-vp-files
 compile
 compile-pipe
