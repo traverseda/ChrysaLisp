@@ -1,0 +1,3 @@
+pip install --user sphinx recommonmark sphinx_rtd_theme m2r
+cd doc
+make html
